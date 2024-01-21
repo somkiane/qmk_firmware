@@ -170,5 +170,5 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 }
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    return 300;
+    return 200;
 }
