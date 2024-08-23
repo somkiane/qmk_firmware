@@ -19,14 +19,14 @@
 //#include "config_common.h"
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 12
+/* #define MATRIX_ROWS 4 */
+/* #define MATRIX_COLS 12 */
 
-#define MATRIX_COL_PINS { B15, B14, B13, B12, B1, B0, B9, B6, B5, B4, B3, A15 }
-#define MATRIX_ROW_PINS { B8, B7, A7, A6 }
-#define DIODE_DIRECTION COL2ROW
+/* #define MATRIX_COL_PINS { B15, B14, B13, B12, B1, B0, B9, B6, B5, B4, B3, A15 } */
+/* #define MATRIX_ROW_PINS { B8, B7, A7, A6 } */
+/* #define DIODE_DIRECTION COL2ROW */
 
-/* Set 0 if debouncing isn't needed */
+/* /\* Set 0 if debouncing isn't needed *\/ */
 #define DEBOUNCE    5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
@@ -36,16 +36,16 @@
 #define LOCKING_RESYNC_ENABLE
 
 /* #define COMBO_COUNT 40 // 42 with uppers, 21 without */
-#define TAPPING_TERM 137
+#define TAPPING_TERM 190
 #define COMBO_TERM 35
-#define FORCE_NKRO
-#define TAPPING_TERM_PER_KEY
+/* #define FORCE_NKRO */
+/* #define TAPPING_TERM_PER_KEY */
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat
-#define QUICK_TAP_TERM 0
+#define QUICK_TAP_TERM 60
 
 // Enable retro tapping
-#define RETRO_TAPPING
+//#define RETRO_TAPPING
 #define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_RIGHT_CTRL // or
 
 //#define HOLD_ON_OTHER_KEY_PRESS
