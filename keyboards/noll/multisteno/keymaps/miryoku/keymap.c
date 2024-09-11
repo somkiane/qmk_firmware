@@ -335,14 +335,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     JS_HOM,          JS_SEL,   JS_STRT, JS_UP,   XXXXXXX, JS_L3,      JS_R3,    JS_SQU,  JS_TRI,  JS_R1,   JS_L1,   XXXXXXX,
     XXXXXXX,         XXXXXXX,  JS_LT,   JS_DN,   JS_RT,   XXXXXXX,    XXXXXXX,  JS_CRO,  JS_CIR,  JS_R2,   JS_L2,   XXXXXXX,
     TD(U_TD_U_BASE), XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-                                        XXXXXXX, JS_UP,   JS_UP,      JS_UP,    JS_UP,   TD(U_TD_U_LSTICK)
+                              TD(U_TD_U_LSTICK), JS_UP,   JS_UP,      JS_UP,    JS_UP,   XXXXXXX
   ),
 
   [U_LSTICK] = LAYOUT_3x6_3(
     JS_HOM,          JS_SEL,  JS_STRT, JS_UP,   XXXXXXX,   JS_L3,   JS_R3,   JS_SQU,  JS_TRI,  JS_R1,   JS_L1,   XXXXXXX,
     XXXXXXX,         XXXXXXX, JS_LT,   JS_DN,   JS_RT,     XXXXXXX, XXXXXXX, JS_CRO,  JS_CIR,  JS_R2,   JS_L2,   XXXXXXX,
     TD(U_TD_U_BASE), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-                               TD(U_TD_U_DPAD), JS_UP,     JS_UP,   JS_UP,   JS_UP,   XXXXXXX
+                              XXXXXXX, JS_UP,     JS_UP,   JS_UP,   JS_UP,   TD(U_TD_U_DPAD)
   ),
 
   [U_SOCDN] = LAYOUT_3x6_3(
@@ -455,10 +455,10 @@ joystick_config_t joystick_axes[JOYSTICK_AXIS_COUNT] = {
 };
 
 // Input Map
-// UP:    button 12 | LS Axis (1, -127)
-// DOWN:  button 13 | LS Axis (1, 127)
-// LEFT:  button 14 | LS Axis (0, -127)
-// RIGHT: button 15 | LS Axis (0, 127)
+// UP:    button 12 | LS Axis (1, -127) | RS Axis (3, -127)
+// DOWN:  button 13 | LS Axis (1, 127)  | RS Axis (3, 127)
+// LEFT:  button 14 | LS Axis (0, -127) | RS Axis (2, -127)
+// RIGHT: button 15 | LS Axis (0, 127)  | RS Axis (2, 127)
 
 // SOCD: up+down = up
 bool joy_up(bool ok) {
